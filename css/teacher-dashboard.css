@@ -1,0 +1,132 @@
+/* ==== GLOBAL ==== */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f5f6fa;
+  color: #1e293b;
+}
+
+/* ==== SIDEBAR ==== */
+.sidebar {
+  width: 230px;
+  background-color: #1e40af;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.sidebar-header {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.nav-btn {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  color: white;
+  background: transparent;
+  transition: all 0.2s;
+}
+.nav-btn:hover {
+  background-color: #2563eb;
+}
+.nav-btn.active {
+  background-color: #2563eb;
+  font-weight: 600;
+}
+.logout-btn {
+  background-color: #f97316;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 6px;
+  transition: 0.3s;
+  width: 100%;
+}
+.logout-btn:hover {
+  background-color: #ea580c;
+}
+
+/* ==== MAIN ==== */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+/* ==== CARDS ==== */
+.card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* ==== INPUTS ==== */
+.input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px #bfdbfe;
+}
+
+/* ==== BUTTONS ==== */
+.btn-blue {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+.btn-blue:hover {
+  background-color: #1d4ed8;
+}
+.btn-green {
+  background-color: #16a34a;
+  color: white;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+.btn-green:hover {
+  background-color: #15803d;
+}
+
+/* ==== TABLE ==== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+}
+th {
+  background-color: #eff6ff;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+tr:nth-child(even) td {
+  background-color: #fafafa;
+}

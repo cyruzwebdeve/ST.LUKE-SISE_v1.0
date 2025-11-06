@@ -1,0 +1,278 @@
+/* ==============================
+   GLOBAL STYLES
+============================== */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  margin: 0;
+}
+
+.dashboard-bg {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* ==============================
+   SIDEBAR
+============================== */
+.sidebar {
+  width: 240px;
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+
+.sidebar-header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-btn {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  color: #334155;
+  background: transparent;
+  width: 100%;
+  transition: all 0.25s ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.nav-btn:hover {
+  background-color: #f1f5f9;
+  color: #1e3a8a;
+}
+
+.nav-btn.active {
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+  font-weight: 600;
+  border-left: 4px solid #f97316; /* orange accent */
+}
+
+.logout-btn {
+  margin-top: 1.5rem;
+  background-color: #f97316;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.logout-btn:hover {
+  background-color: #ea580c;
+}
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+.main-content {
+  flex: 1;
+  padding: 2rem 2.5rem;
+  background-color: #f8fafc;
+  overflow-y: auto;
+}
+
+.main-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+/* ==============================
+   SECTIONS
+============================== */
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  border-bottom: 2px solid #f97316;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* ==============================
+   DASHBOARD CARDS
+============================== */
+.card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  border-left: 4px solid transparent;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.card-blue {
+  border-left-color: #2563eb;
+}
+
+.card-orange {
+  border-left-color: #f97316;
+}
+
+.card-lightblue {
+  border-left-color: #3b82f6;
+}
+
+.card-label {
+  font-size: 0.85rem;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.card-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* ==============================
+   TABLES
+============================== */
+.table-container {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 1.25rem;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #1e293b;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.table th {
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* ==============================
+   GRADES SECTION
+============================== */
+.grades-info {
+  font-size: 0.95rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* ==============================
+   BUTTONS
+============================== */
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-blue {
+  background-color: #2563eb;
+  color: white;
+}
+.btn-blue:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-green {
+  background-color: #16a34a;
+  color: white;
+}
+.btn-green:hover {
+  background-color: #15803d;
+}
+
+.btn-gray {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+.btn-gray:hover {
+  background-color: #d1d5db;
+}
+
+/* ==============================
+   MODALS (Optional Future Use)
+============================== */
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.45);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 22rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* ==============================
+   INPUTS
+============================== */
+.input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px #bfdbfe;
+}

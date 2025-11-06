@@ -1,0 +1,159 @@
+/* =============================
+   ADMIN DASHBOARD THEME
+   ============================= */
+
+/* Base layout */
+body {
+  background: linear-gradient(to right, #e0e7ff, #fff7ed);
+  color: #1e293b;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+/* Sidebar */
+aside {
+  width: 260px;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+aside h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Sidebar buttons */
+aside nav button {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+aside nav button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.sub-btn {
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+aside button.active {
+  background: #f97316;
+}
+
+/* Logout button */
+aside > div:last-child button {
+  background: #f97316;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+aside > div:last-child button:hover {
+  background: #ea580c;
+}
+
+/* Main layout */
+main {
+  flex: 1;
+  padding: 2.5rem;
+  background: #f8fafc;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  border-left: 6px solid #f97316;
+  padding-left: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Section titles */
+section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2563eb;
+  border-bottom: 2px solid #f97316;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Forms */
+form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+form input,
+form select {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 0.5rem;
+  transition: border 0.2s;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* Primary buttons */
+form button {
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.5rem;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #1e40af;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+thead {
+  background: #dbeafe;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+tbody tr:hover {
+  background: #f1f5f9;
+}
+
+/* Collapsible animation */
+.collapsible {
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}

@@ -1,0 +1,138 @@
+/* ---------- GENERAL BACKGROUND ---------- */
+.login-bg {
+  background: linear-gradient(to right, #e0e7ff, #f0f9ff, #f3e8ff);
+}
+
+/* ---------- BOX DESIGN ---------- */
+.login-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 24rem;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* ---------- TEXT ---------- */
+.login-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1f2937; /* gray-800 */
+}
+
+.login-subtitle {
+  color: #6b7280; /* gray-500 */
+  margin-bottom: 1rem;
+}
+
+.login-role {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* ---------- INPUT FIELDS ---------- */
+.input-field {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+.input-field:focus {
+  outline: none;
+  border-color: #6366f1; /* indigo */
+  box-shadow: 0 0 0 2px #c7d2fe;
+}
+
+/* ---------- BUTTON STYLES ---------- */
+.btn-admin {
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+.btn-admin:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-teacher {
+  width: 100%;
+  background-color: #16a34a;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+.btn-teacher:hover {
+  background-color: #15803d;
+}
+
+.btn-student {
+  width: 100%;
+  background-color: #f5950f;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+.btn-student:hover {
+  background-color: hsl(44, 61%, 57%);
+}
+
+/* ---------- LOGIN FORM BUTTONS ---------- */
+.btn-login {
+  width: 100%;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+.btn-back {
+  width: 100%;
+  background-color: #d1d5db;
+  color: #111827;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+.btn-back:hover {
+  background-color: #9ca3af;
+}
+
+/* ---------- ROLE COLORS ---------- */
+.admin-color {
+  background-color: #2563eb;
+}
+.admin-color:hover {
+  background-color: #1e40af;
+}
+
+.teacher-color {
+  background-color: #16a34a;
+}
+.teacher-color:hover {
+  background-color: #15803d;
+}
+
+.student-color {
+  background-color: #f5950f;
+}
+.student-color:hover {
+  background-color: #e6b515;
+}
+
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - St. Luke Christian School</title>
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+ <!-- HEADER -->
+<header>
+  <div class="logo">
+    <a href="#">
+      <img src="photo/logo.png" alt="School Logo">
+      <span>St. Luke Christian School & Learning Center</span>
+    </a>
+  </div>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#faqs">FAQs</a></li>
+      <li><a href="#enroll" class="btn">Enroll Now</a></li>
+      <li class="profile">
+        <a href="#profile">
+          <img src="photo/profile.png" alt="Login">
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <section class="gallery">
+    <!-- Example images, hindi naka hardcode once connected sa backend -->
+    <div class="card"><img src="photo/image.1.jpg" alt="Gallery Image 1"></div>
+    <div class="card"><img src="photo/image2.jpg" alt="Gallery Image 2"></div>
+    <div class="card"><img src="photo/image3.jpg" alt="Gallery Image 3"></div>
+    <div class="card"><img src="photo/image4.jpg" alt="Gallery Image 4"></div>
+    <div class="card"><img src="photo/image5.jpg" alt="Gallery Image 5"></div>
+  </section>
+<!-- Modal for enlarged photo -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 St. Luke Christian School & Learning Center. All rights reserved.</p>
+  </footer>
+
+  <script src="js/gallery.js"></script>
+</body>
+</html>
